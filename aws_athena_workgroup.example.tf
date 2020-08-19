@@ -15,4 +15,3 @@ resource "aws_athena_workgroup" "example" {
     }
   }
 }
-
