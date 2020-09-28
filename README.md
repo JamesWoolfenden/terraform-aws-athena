@@ -33,7 +33,6 @@ module "athena" {
 ```
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
-
 ## Requirements
 
 No requirements.
@@ -41,15 +40,15 @@ No requirements.
 ## Providers
 
 | Name | Version |
-| ---- | ------- |
-| aws  | n/a     |
+|------|---------|
+| aws | n/a |
 
 ## Inputs
 
-| Name        | Description                                        | Type     | Default | Required |
-| ----------- | -------------------------------------------------- | -------- | ------- | :------: |
-| common_tags | This is to help you add tags to your cloud objects | `map`    | n/a     |   yes    |
-| kms_key_arn | n/a                                                | `string` | n/a     |   yes    |
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:--------:|
+| common\_tags | This is to help you add tags to your cloud objects | `map` | n/a | yes |
+| kms\_key\_arn | n/a | `string` | n/a | yes |
 
 ## Outputs
 
