@@ -14,4 +14,6 @@ resource "aws_athena_workgroup" "example" {
       }
     }
   }
+
+  tags = var.common_tags
 }
