@@ -15,7 +15,7 @@ It's 100% Open Source and licensed under the [APACHE2](LICENSE).
 
 This is just a very basic example.
 
-![alt text](./diagram/api.png)
+![alt text](./diagram/athena.png)
 
 Include **module.athena.tf** this repository as a module in your existing terraform code:
 
