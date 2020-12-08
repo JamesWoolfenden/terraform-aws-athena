@@ -5,7 +5,7 @@
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
 [![checkov](https://img.shields.io/badge/checkov-verified-brightgreen)](https://www.checkov.io/)
 
-Terraform module -
+Terraform module to deploy AWS Athena.
 
 ---
 
@@ -22,7 +22,9 @@ Include **module.athena.tf** this repository as a module in your existing terraf
 ```terraform
 module "athena" {
   source      = "JamesWoolfenden/athena/aws"
-  version     = "0.0.4"
+  version     = "0.1.2"
+  common_tags = var.common_tags
+  kms_key_arn = var.kms_key_arn
 }
 ```
 
