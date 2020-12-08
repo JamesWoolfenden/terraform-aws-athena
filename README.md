@@ -13,7 +13,7 @@ It's 100% Open Source and licensed under the [APACHE2](LICENSE).
 
 ## Usage
 
-This is just a very basic example.
+This is a very basic example.
 
 ![alt text](./diagram/athena.png)
 
