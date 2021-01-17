@@ -6,3 +6,8 @@ variable "common_tags" {
 variable "kms_key_arn" {
   type = string
 }
+
+variable "workgroup_name" {
+  type    = string
+  default = "examplea"
+}

@@ -1,5 +1,5 @@
 resource "aws_athena_workgroup" "example" {
-  name = "example"
+  name = var.workgroup_name
 
   configuration {
     enforce_workgroup_configuration    = true

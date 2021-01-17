@@ -11,6 +11,8 @@
 
 ---
 
+Basic Terraform module to implement Athena.
+
 It's 100% Open Source and licensed under the [APACHE2](LICENSE).
 
 ## Usage
@@ -19,7 +21,7 @@ This is a very basic example.
 
 ![alt text](./diagram/athena.png)
 
-Include **module.athena.tf** this repository as a module in your existing terraform code:
+Include this repository as a module in your existing Terraform code:
 
 ```terraform
 module "athena" {
@@ -53,6 +55,7 @@ No requirements.
 |------|-------------|------|---------|:--------:|
 | common\_tags | This is to help you add tags to your cloud objects | `map(any)` | n/a | yes |
 | kms\_key\_arn | n/a | `string` | n/a | yes |
+| workgroup\_name | n/a | `string` | `"examplea"` | no |
 
 ## Outputs
 
