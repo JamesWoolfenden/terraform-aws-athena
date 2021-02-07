@@ -35,7 +35,7 @@ jobs:
           token: ${{ github.token }}
       - uses: actions/setup-python@v2
         with:
-           python-version: 3.8
+          python-version: 3.8
       - uses: pre-commit/action@v2.0.0
   version:
     name: versioning
