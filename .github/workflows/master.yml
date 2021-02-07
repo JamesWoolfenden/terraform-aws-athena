@@ -7,9 +7,6 @@ on:
 jobs:
   terraform:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        python-version: [3.8]
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -37,8 +34,6 @@ jobs:
           ref: master
           token: ${{ github.token }}
       - uses: actions/setup-python@v2
-        with:
-          python-version: ${{ matrix.python-version }}
       - uses: pre-commit/action@v2.0.0
   version:
     name: versioning
