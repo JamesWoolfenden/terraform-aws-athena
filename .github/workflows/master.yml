@@ -33,6 +33,8 @@ jobs:
         with:
           ref: master
           token: ${{ github.token }}
+      - name: python
+        uses: actions/setup-python@v2
       - name: pre-commit
         uses: pre-commit/action@v2.0.0
   version:
