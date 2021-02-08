@@ -21,7 +21,7 @@ This is a very basic example.
 
 ![alt text](./diagram/athena.png)
 
-Include this repository as a module in your existing Terraform code:
+Include this as a module in your existing Terraform code - *module.athena.tf*:
 
 ```terraform
 module "athena" {
@@ -35,7 +35,7 @@ module "athena" {
 ## IAM Permissions
 
 ```json
-
+TBD
 ```
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
