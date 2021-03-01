@@ -49,24 +49,11 @@ No requirements.
 |------|---------|
 | aws | n/a |
 
-## Modules
-
-No Modules.
-
-## Resources
-
-| Name |
-|------|
-| [aws_athena_database](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/athena_database) |
-| [aws_athena_workgroup](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/athena_workgroup) |
-| [aws_s3_bucket](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket) |
-
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | common\_tags | This is to help you add tags to your cloud objects | `map(any)` | n/a | yes |
-| encryption\_option | (optional) describe your variable | `string` | `"SSE_KMS"` | no |
 | kms\_key\_arn | n/a | `string` | n/a | yes |
 | workgroup\_name | n/a | `string` | `"examplea"` | no |
 
@@ -74,9 +61,8 @@ No Modules.
 
 | Name | Description |
 |------|-------------|
-| bucket | n/a |
-| database | n/a |
 | workgroup | n/a |
+
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 ## Related Projects
@@ -99,7 +85,7 @@ Please use the [issue tracker](https://github.com/JamesWoolfenden/terraform-aws-
 
 ## Copyrights
 
-Copyright Â© 2019-2021 James Woolfenden
+Copyright © 2019-2021 James Woolfenden
 
 ## License
 

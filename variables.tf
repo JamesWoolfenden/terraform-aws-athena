@@ -11,3 +11,9 @@ variable "workgroup_name" {
   type    = string
   default = "examplea"
 }
+
+variable "encryption_option" {
+  type        = string
+  description = "(optional) describe your variable"
+  default     = "SSE_KMS"
+}
