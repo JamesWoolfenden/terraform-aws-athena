@@ -17,3 +17,7 @@ variable "encryption_option" {
   description = "(optional) describe your variable"
   default     = "SSE_KMS"
 }
+
+variable "bucket_name" {
+
+}

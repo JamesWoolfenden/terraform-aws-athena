@@ -65,6 +65,7 @@ No Modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
+| bucket\_name | n/a | `any` | n/a | yes |
 | common\_tags | This is to help you add tags to your cloud objects | `map(any)` | n/a | yes |
 | encryption\_option | (optional) describe your variable | `string` | `"SSE_KMS"` | no |
 | kms\_key\_arn | n/a | `string` | n/a | yes |
