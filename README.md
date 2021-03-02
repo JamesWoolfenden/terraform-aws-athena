@@ -38,6 +38,17 @@ module "athena" {
 TBD
 ```
 
+## IAC comparison
+
+The makefile in the example runs 4 of the main IAC SAST tools:
+
+- Checkov
+- TFSec
+- Terrascan
+- Kics
+
+You can run these as part of the validate scripts container here and all 4 will output to the output folder.
+
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
 
