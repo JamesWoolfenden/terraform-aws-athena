@@ -52,6 +52,8 @@ compare:
 	-checkov -d . --external-checks-dir ../../checkov -o json >../../output/checkov.json
 	-terrascan scan -o json -x json >../../output/terrascan.json
 	-tfsec . --out ../../output/tfsec.json -f json -s
+	docker pull checkmarx/kics:latest
+	docker run -v $(CURDIR):/path -v $(CURDIR)/../../output:/output checkmarx/kics:latest -p "/path" -o "/output/kics.json"
 
 target:
 	@read -p "Enter Module to target:" MODULE;
