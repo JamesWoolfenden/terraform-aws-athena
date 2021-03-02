@@ -47,6 +47,8 @@ valid:
 	-checkov -d . --external-checks-dir ../../checkov
 	-tfsec .
 	-terrascan scan
+	docker pull checkmarx/kics:latest
+	docker run -v $(CURDIR):/path checkmarx/kics:latest -p "/path"
 
 compare:
 	-checkov -d . --external-checks-dir ../../checkov -o json >../../output/checkov.json
