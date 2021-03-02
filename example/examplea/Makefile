@@ -43,10 +43,15 @@ docs:
 	terraform-docs md . > README.md
 
 valid:
-	terraform fmt -recursive
-	checkov -d . --external-checks-dir ../../checkov
-	tfsec .
-	terrascan scan
+	-terraform fmt -recursive
+	-checkov -d . --external-checks-dir ../../checkov
+	-tfsec .
+	-terrascan scan
+
+compare:
+	-checkov -d . --external-checks-dir ../../checkov -o json >../../output/checkov.json
+	-terrascan scan -o json -x json >../../output/terrascan.json
+	-tfsec . --out ../../output/tfsec.json -f json -s
 
 target:
 	@read -p "Enter Module to target:" MODULE;
