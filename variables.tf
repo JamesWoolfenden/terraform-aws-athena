@@ -4,7 +4,8 @@ variable "common_tags" {
 }
 
 variable "kms_key_arn" {
-  type = string
+  type        = string
+  description = "The ARN of your KMS key in AWS"
 }
 
 variable "workgroup_name" {
@@ -19,5 +20,5 @@ variable "encryption_option" {
 }
 
 variable "bucket_name" {
-
+  type = string
 }
