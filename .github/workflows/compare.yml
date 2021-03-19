@@ -39,7 +39,7 @@ jobs:
         run: |
           pip3 install checkov
       - name: run checkov
-        run: ./checkov -d  ${{ env.tf_target_dir }} -o json | tee checkov.json
+        run: checkov -d  ${{ env.tf_target_dir }} -o json | tee checkov.json
         continue-on-error: true
       - name: store
         uses: actions/upload-artifact@v2
