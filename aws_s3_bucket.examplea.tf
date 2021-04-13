@@ -1,7 +1,9 @@
 resource "aws_s3_bucket" "examplea" {
-  #checkov:skip=CKV_AWS_21:
-  #checkov:skip=CKV_AWS_52:
-  #checkov:skip=CKV_AWS_18:
+  # checkov:skip=CKV_AWS_145: ADD REASON
+  # checkov:skip=CKV_AWS_144: ADD REASON
+  # checkov:skip=CKV_AWS_21:
+  # checkov:skip=CKV_AWS_52:
+  # checkov:skip=CKV_AWS_18:
   bucket = var.bucket_name
 
   server_side_encryption_configuration {
