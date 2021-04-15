@@ -58,37 +58,37 @@ No requirements.
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | n/a |
+| aws | n/a |
 
 ## Modules
 
-No modules.
+No Modules.
 
 ## Resources
 
-| Name | Type |
-|------|------|
-| [aws_athena_database.examplea](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/athena_database) | resource |
-| [aws_athena_workgroup.example](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/athena_workgroup) | resource |
-| [aws_s3_bucket.examplea](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket) | resource |
+| Name |
+|------|
+| [aws_athena_database](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/athena_database) |
+| [aws_athena_workgroup](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/athena_workgroup) |
+| [aws_s3_bucket](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket) |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_bucket_name"></a> [bucket\_name](#input\_bucket\_name) | n/a | `string` | n/a | yes |
-| <a name="input_common_tags"></a> [common\_tags](#input\_common\_tags) | This is to help you add tags to your cloud objects | `map(any)` | n/a | yes |
-| <a name="input_encryption_option"></a> [encryption\_option](#input\_encryption\_option) | (optional) describe your variable | `string` | `"SSE_KMS"` | no |
-| <a name="input_kms_key_arn"></a> [kms\_key\_arn](#input\_kms\_key\_arn) | The ARN of your KMS key in AWS | `string` | n/a | yes |
-| <a name="input_workgroup_name"></a> [workgroup\_name](#input\_workgroup\_name) | n/a | `string` | `"examplea"` | no |
+| bucket\_name | n/a | `string` | n/a | yes |
+| common\_tags | This is to help you add tags to your cloud objects | `map(any)` | n/a | yes |
+| encryption\_option | (optional) describe your variable | `string` | `"SSE_KMS"` | no |
+| kms\_key\_arn | The ARN of your KMS key in AWS | `string` | n/a | yes |
+| workgroup\_name | n/a | `string` | `"examplea"` | no |
 
 ## Outputs
 
 | Name | Description |
 |------|-------------|
-| <a name="output_bucket"></a> [bucket](#output\_bucket) | n/a |
-| <a name="output_database"></a> [database](#output\_database) | n/a |
-| <a name="output_workgroup"></a> [workgroup](#output\_workgroup) | n/a |
+| bucket | n/a |
+| database | n/a |
+| workgroup | n/a |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 ## Related Projects
