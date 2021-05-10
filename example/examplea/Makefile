@@ -58,7 +58,7 @@ compare:
 	-terrascan scan -o json -x json >../../output/terrascan.json
 	-tfsec . --out ../../output/tfsec.json -f json -s
 	docker pull checkmarx/kics:latest
-	docker run -v $(CURDIR):/path -v $(CURDIR)/../../output:/output scan --path "/path" -o "/output/kics.json"
+	docker run -v $(CURDIR):/path -v $(CURDIR)/../../output:/output checkmarx/kics:latest scan --path "/path" -o "/output/kics.json"
 
 conftest: plan convert
 	conftest test ./tfplan.json -p ../../policies
