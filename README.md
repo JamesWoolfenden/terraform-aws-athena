@@ -50,16 +50,15 @@ The makefile in the example runs 4 of the main IAC SAST tools:
 You can run these as part of the validate scripts contained here and all 4 will output to the **output** folder.
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
-
 ## Requirements
 
 No requirements.
 
 ## Providers
 
-| Name                                             | Version |
-| ------------------------------------------------ | ------- |
-| <a name="provider_aws"></a> [aws](#provider_aws) | n/a     |
+| Name | Version |
+|------|---------|
+| <a name="provider_aws"></a> [aws](#provider\_aws) | 3.36.0 |
 
 ## Modules
 
@@ -67,31 +66,31 @@ No modules.
 
 ## Resources
 
-| Name                                                                                                                                                    | Type     |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
-| [aws_athena_database.examplea](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/athena_database)                             | resource |
-| [aws_athena_workgroup.example](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/athena_workgroup)                            | resource |
-| [aws_s3_bucket.examplea](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket)                                         | resource |
+| Name | Type |
+|------|------|
+| [aws_athena_database.examplea](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/athena_database) | resource |
+| [aws_athena_workgroup.example](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/athena_workgroup) | resource |
+| [aws_s3_bucket.examplea](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket) | resource |
 | [aws_s3_bucket_public_access_block.examplea](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket_public_access_block) | resource |
+| [aws_s3_bucket_server_side_encryption_configuration.examplea](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket_server_side_encryption_configuration) | resource |
 
 ## Inputs
 
-| Name                                                                                 | Description                                        | Type       | Default      | Required |
-| ------------------------------------------------------------------------------------ | -------------------------------------------------- | ---------- | ------------ | :------: |
-| <a name="input_bucket_name"></a> [bucket_name](#input_bucket_name)                   | n/a                                                | `string`   | n/a          |   yes    |
-| <a name="input_common_tags"></a> [common_tags](#input_common_tags)                   | This is to help you add tags to your cloud objects | `map(any)` | n/a          |   yes    |
-| <a name="input_encryption_option"></a> [encryption_option](#input_encryption_option) | (optional) describe your variable                  | `string`   | `"SSE_KMS"`  |    no    |
-| <a name="input_kms_key_arn"></a> [kms_key_arn](#input_kms_key_arn)                   | The ARN of your KMS key in AWS                     | `string`   | n/a          |   yes    |
-| <a name="input_workgroup_name"></a> [workgroup_name](#input_workgroup_name)          | n/a                                                | `string`   | `"examplea"` |    no    |
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:--------:|
+| <a name="input_bucket_name"></a> [bucket\_name](#input\_bucket\_name) | n/a | `string` | n/a | yes |
+| <a name="input_common_tags"></a> [common\_tags](#input\_common\_tags) | This is to help you add tags to your cloud objects | `map(any)` | n/a | yes |
+| <a name="input_encryption_option"></a> [encryption\_option](#input\_encryption\_option) | (optional) describe your variable | `string` | `"SSE_KMS"` | no |
+| <a name="input_kms_key_arn"></a> [kms\_key\_arn](#input\_kms\_key\_arn) | The ARN of your KMS key in AWS | `string` | n/a | yes |
+| <a name="input_workgroup_name"></a> [workgroup\_name](#input\_workgroup\_name) | n/a | `string` | `"examplea"` | no |
 
 ## Outputs
 
-| Name                                                           | Description |
-| -------------------------------------------------------------- | ----------- |
-| <a name="output_bucket"></a> [bucket](#output_bucket)          | n/a         |
-| <a name="output_database"></a> [database](#output_database)    | n/a         |
-| <a name="output_workgroup"></a> [workgroup](#output_workgroup) | n/a         |
-
+| Name | Description |
+|------|-------------|
+| <a name="output_bucket"></a> [bucket](#output\_bucket) | n/a |
+| <a name="output_database"></a> [database](#output\_database) | n/a |
+| <a name="output_workgroup"></a> [workgroup](#output\_workgroup) | n/a |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 ## Related Projects
