@@ -1,5 +1,6 @@
 resource "aws_athena_database" "examplea" {
-  name   = "database_name"
+  name = var.database
+
   bucket = aws_s3_bucket.examplea.bucket
 
   encryption_configuration {

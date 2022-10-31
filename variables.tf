@@ -22,3 +22,9 @@ variable "encryption_option" {
 variable "bucket_name" {
   type = string
 }
+
+variable "database" {
+  type        = string
+  description = "Name of the database"
+  default     = "myDatabase"
+}
