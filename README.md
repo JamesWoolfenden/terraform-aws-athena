@@ -1,6 +1,6 @@
 # terraform-aws-athena
 
-[![Build Status](https://github.com/JamesWoolfenden/terraform-aws-athena/workflows/Verify%20and%20Bump/badge.svg?branch=master)](https://github.com/JamesWoolfenden/terraform-aws-athena)
+[![Build Status](https://github.com/JamesWoolfenden/terraform-aws-athena/workflows/Verify/badge.svg?branch=master)](https://github.com/JamesWoolfenden/terraform-aws-athena)
 [![Latest Release](https://img.shields.io/github/release/JamesWoolfenden/terraform-aws-athena.svg)](https://github.com/JamesWoolfenden/terraform-aws-athena/releases/latest)
 [![GitHub tag (latest SemVer)](https://img.shields.io/github/tag/JamesWoolfenden/terraform-aws-athena.svg?label=latest)](https://github.com/JamesWoolfenden/terraform-aws-athena/releases/latest)
 ![Terraform Version](https://img.shields.io/badge/tf-%3E%3D0.14.0-blue.svg)
@@ -112,11 +112,68 @@ resource "aws_iam_policy" "terraform_pike" {
             "Sid": "VisualEditor0",
             "Effect": "Allow",
             "Action": [
+                "athena:CreateWorkGroup",
+                "athena:DeleteWorkGroup",
+                "athena:GetDatabase",
+                "athena:GetQueryExecution",
+                "athena:GetQueryResults",
+                "athena:GetWorkGroup",
+                "athena:ListTagsForResource",
+                "athena:StartQueryExecution",
+                "athena:TagResource",
+                "athena:UntagResource",
+                "athena:UpdateWorkGroup"
+            ],
+            "Resource": [
+                "*"
+            ]
+        },
+        {
+            "Sid": "VisualEditor1",
+            "Effect": "Allow",
+            "Action": [
+                "ec2:DescribeAccountAttributes"
+            ],
+            "Resource": [
+                "*"
+            ]
+        },
+        {
+            "Sid": "VisualEditor2",
+            "Effect": "Allow",
+            "Action": [
+                "glue:CreateDatabase",
+                "glue:DeleteDatabase",
+                "glue:GetDatabase",
+                "glue:GetTables",
+                "glue:UpdateDatabase"
+            ],
+            "Resource": [
+                "*"
+            ]
+        },
+        {
+            "Sid": "VisualEditor3",
+            "Effect": "Allow",
+            "Action": [
+                "kms:Decrypt",
+                "kms:Encrypt",
+                "kms:GenerateDataKey"
+            ],
+            "Resource": [
+                "*"
+            ]
+        },
+        {
+            "Sid": "VisualEditor4",
+            "Effect": "Allow",
+            "Action": [
                 "s3:CreateBucket",
                 "s3:DeleteBucket",
                 "s3:GetAccelerateConfiguration",
                 "s3:GetBucketAcl",
                 "s3:GetBucketCORS",
+                "s3:GetBucketLocation",
                 "s3:GetBucketLogging",
                 "s3:GetBucketObjectLockConfiguration",
                 "s3:GetBucketPolicy",
@@ -132,7 +189,8 @@ resource "aws_iam_policy" "terraform_pike" {
                 "s3:GetReplicationConfiguration",
                 "s3:ListBucket",
                 "s3:PutBucketPublicAccessBlock",
-                "s3:PutEncryptionConfiguration"
+                "s3:PutEncryptionConfiguration",
+                "s3:PutObject"
             ],
             "Resource": [
                 "*"
@@ -166,7 +224,7 @@ Please use the [issue tracker](https://github.com/JamesWoolfenden/terraform-aws-
 
 ## Copyrights
 
-Copyright © 2019-2022 James Woolfenden
+Copyright © 2019-2023 James Woolfenden
 
 ## License
 
