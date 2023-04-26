@@ -80,7 +80,7 @@ No modules.
 |------|-------------|------|---------|:--------:|
 | <a name="input_bucket_name"></a> [bucket\_name](#input\_bucket\_name) | n/a | `string` | n/a | yes |
 | <a name="input_common_tags"></a> [common\_tags](#input\_common\_tags) | This is to help you add tags to your cloud objects | `map(any)` | n/a | yes |
-| <a name="input_database"></a> [database](#input\_database) | Name of the database | `string` | `"myDatabase"` | no |
+| <a name="input_database"></a> [database](#input\_database) | Name of the database | `string` | `"mydatabase"` | no |
 | <a name="input_encryption_option"></a> [encryption\_option](#input\_encryption\_option) | (optional) describe your variable | `string` | `"SSE_KMS"` | no |
 | <a name="input_kms_key_arn"></a> [kms\_key\_arn](#input\_kms\_key\_arn) | The ARN of your KMS key in AWS | `string` | n/a | yes |
 | <a name="input_workgroup_name"></a> [workgroup\_name](#input\_workgroup\_name) | n/a | `string` | `"examplea"` | no |

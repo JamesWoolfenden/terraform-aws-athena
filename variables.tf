@@ -26,5 +26,5 @@ variable "bucket_name" {
 variable "database" {
   type        = string
   description = "Name of the database"
-  default     = "myDatabase"
+  default     = "mydatabase"
 }
