@@ -168,6 +168,7 @@ resource "aws_iam_policy" "terraform_pike" {
             "Sid": "VisualEditor4",
             "Effect": "Allow",
             "Action": [
+                "s3:AbortMultipartUpload",
                 "s3:CreateBucket",
                 "s3:DeleteBucket",
                 "s3:GetAccelerateConfiguration",
@@ -188,6 +189,8 @@ resource "aws_iam_policy" "terraform_pike" {
                 "s3:GetObjectAcl",
                 "s3:GetReplicationConfiguration",
                 "s3:ListBucket",
+                "s3:ListBucketMultipartUploads",
+                "s3:ListMultipartUploadParts",
                 "s3:PutBucketPublicAccessBlock",
                 "s3:PutEncryptionConfiguration",
                 "s3:PutObject"
